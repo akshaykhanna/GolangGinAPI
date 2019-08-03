@@ -25,17 +25,10 @@
                 "summary": "List users",
                 "responses": {
                     "200": {
-                        "description": "OK",
-                        "schema": {
-                            "type": "array",
-                            "items": {
-                                "$ref": "#/definitions/users"
-                            }
-                        },
                         "headers": {
                             "Token": {
                                 "type": "string",
-                                "description": "qwerty"
+                                "description": "users"
                             }
                         }
                     }

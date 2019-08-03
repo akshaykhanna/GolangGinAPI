@@ -28,10 +28,10 @@ func main() {
 
 	// programatically set swagger info
 	docs.SwaggerInfo.Title = "Swagger Example API"
-	docs.SwaggerInfo.Description = "This is a sample server Petstore server."
+	docs.SwaggerInfo.Description = "This is a sample server."
 	docs.SwaggerInfo.Version = "1.0"
-	docs.SwaggerInfo.Host = "petstore.swagger.io"
-	docs.SwaggerInfo.BasePath = "/v2"
+	docs.SwaggerInfo.Host = "localhost:8080"
+	docs.SwaggerInfo.BasePath = "/api/v1"
 	docs.SwaggerInfo.Schemes = []string{"http", "https"}
 	r := gin.Default()
 
@@ -51,8 +51,8 @@ func main() {
 // @Description get users
 // @Accept  json
 // @Produce  json
-// @Success 200 {array} users
-// @Header 200 {string} Token "qwerty"
+// @Success 200
+// @Header 200 {string} Token "users"
 // @Router /users [get]
 func GetUsers(c *gin.Context) {
 	var users = []Users{
@@ -68,11 +68,11 @@ func GetUsers(c *gin.Context) {
 // GetUser godoc
 // @Summary Get user by
 // @Description get int by ID
-// @ID get-string-by-int
+// @ID
 // @Produce  json
 // @Param id path int true "ID"
 // @Success 200 {object} Users
-// @Header 200 {string} Token "qwerty"
+// @Header 200 {string} Token "users"
 // @Failure 404
 // @Router users/{id} [get]
 func GetUser(c *gin.Context) {

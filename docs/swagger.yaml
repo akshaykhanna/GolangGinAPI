@@ -17,14 +17,9 @@ paths:
       - application/json
       responses:
         "200":
-          description: OK
           headers:
             Token:
-              description: qwerty
+              description: users
               type: string
-          schema:
-            items:
-              $ref: '#/definitions/users'
-            type: array
       summary: List users
 swagger: "2.0"
