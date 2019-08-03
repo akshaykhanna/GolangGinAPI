@@ -13,3 +13,7 @@
  `http://localhost:8080/swagger/index.html`
  ## Generate/Init Swagger
  `swag init`
+ ## Gin reference
+ `https://medium.com/@etiennerouzeaud/how-to-create-a-basic-restful-api-in-go-c8e032ba3181`
+ ## Swagger reference
+`https://github.com/swaggo/swag`
