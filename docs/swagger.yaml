@@ -1,0 +1,30 @@
+info:
+  contact:
+    email: support@swagger.io
+    name: API Support
+    url: http://www.swagger.io/support
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+  termsOfService: http://swagger.io/terms/
+paths:
+  /users:
+    get:
+      consumes:
+      - application/json
+      description: get users
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          headers:
+            Token:
+              description: qwerty
+              type: string
+          schema:
+            items:
+              $ref: '#/definitions/users'
+            type: array
+      summary: List users
+swagger: "2.0"
